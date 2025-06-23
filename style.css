@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+    background: linear-gradient(to bottom left, #1e1e2f, #4a4a6f, #6a6a8f); /* Adjust gradient direction and colors */
+    background-size: 600% 600%; /* Keep intensity */
+    animation: waveAnimation 8s ease infinite; /* Keep animation speed */
+    color: #ffffff;
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+@keyframes waveAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu Styles */
+#menu {
+    text-align: center;
+    background-color: #2c2c3e;
+    padding: 12px; /* Slightly increased padding for better spacing */
+    width: 30%; /* Increased width to prevent text wrapping */
+    margin: 1% auto 2% auto; /* Adjusted margins for balance */
+    border-radius: 20px; /* Slightly increased border radius */
+    border: 4px solid #444455; /* Keep border */
+    display: flex;
+    justify-content: space-evenly; /* Balanced spacing between items */
+    gap: 20px; /* Updated spacing between items */
+    height: auto; /* Adjust height dynamically based on content */
+}
+
+#menu button {
+    background-color: #3a3a4f;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 15px; /* Adjusted to avoid half circles */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#menu button:hover {
+    background-color: #50506a;
+    transform: scale(1.05);
+}
+
+/* Content Styles */
+#content {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+/* BIN Checker Styles */
+#bin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+#itemInput {
+    width: 300px;
+    height: 40px;
+    background-color: #2c2c3e;
+    border: 2px solid #444455;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#itemInput:focus {
+    border-color: #50506a;
+}
+
+#fetchButton {
+    background-color: #3a3a4f;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#fetchButton:hover {
+    background-color: #50506a;
+    transform: scale(1.05);
+}
+
+#result {
+    font-size: 18px;
+    color: #a0a0b0;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+
+/* Suggestion Box Styles */
+#suggestionBox, #binSuggestionBox, #bazaarSuggestionBox {
+    z-index: 1000;
+    position: absolute;
+    background-color: #2c2c3e;
+    color: #ffffff;
+    border: 1px solid #444455;
+    border-radius: 5px;
+    padding: 5px;
+    display: none;
+}
+
+#suggestionBox .suggestion, #binSuggestionBox .suggestion, #bazaarSuggestionBox .suggestion {
+    font-size: 18px; /* Increased font size */
+    padding: 8px 12px; /* Increased padding */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.2s ease;
+}
+
+#suggestionBox .suggestion:hover, #binSuggestionBox .suggestion:hover, #bazaarSuggestionBox .suggestion:hover {
+    background-color: #50506a;
+}
+
+/* Bazaar Checker Styles */
+#bazaar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+#bazaarItemInput {
+    width: 300px;
+    height: 40px;
+    background-color: #2c2c3e;
+    border: 2px solid #444455;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#bazaarItemInput:focus {
+    border-color: #50506a;
+}
+
+#bazaarFetchButton {
+    background-color: #3a3a4f;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#bazaarFetchButton:hover {
+    background-color: #50506a;
+    transform: scale(1.05);
+}
+
+#bazaarResult {
+    font-size: 18px;
+    color: #a0a0b0;
+    margin-top: 10px;
+    word-wrap: break-word;
+}

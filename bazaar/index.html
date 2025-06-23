@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazaar Checker</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="menu">
+        <button id="button" onclick="window.location.href='/'">Home</button>
+        <button id="button" onclick="window.location.href='/bin'">BIN Checker</button>
+        <button id="button" onclick="window.location.href='/bazaar'">Bazaar Checker</button>
+        <button id="button" onclick="alert('About Page Coming Soon!')">About</button>
+    </div>
+    <div id="content">
+        <h1>Welcome to the Bazaar Checker</h1>
+        <p>Find the lowest Bazaar price for your desired Skyblock items.</p>
+    </div>
+    <div id="bazaar">
+        <input type="text" id="bazaarItemInput" placeholder="Enter Item Name" autocomplete="off">
+        <button id="bazaarFetchButton">Fetch Lowest Price</button>
+        <p id="bazaarResult"></p>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
