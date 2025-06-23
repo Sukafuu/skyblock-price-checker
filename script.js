@@ -133,6 +133,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     console.log("DOM fully loaded");
 
+    // Handle redirection from 404.html
+    const urlParams = new URLSearchParams(window.location.search);
+    const redirectPath = urlParams.get("redirect");
+    if (redirectPath) {
+        history.replaceState(null, "", redirectPath);
+    }
+
     await fetchBazaarSuggestions(); // Fetch suggestions on page load
 
     const fetchPrice = async () => {
